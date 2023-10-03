@@ -87,7 +87,7 @@ std::unordered_set<U16> construct_bottom_rook_moves_with_board(const U8 p0, cons
             }
         }
     }
-    else {
+    if (p0 >= 8) {
         if (!(board[p0-pos(0,1)] & color)) rook_moves.insert(move(p0, p0-pos(0,1))); // bottom
     }
 
@@ -132,7 +132,7 @@ std::unordered_set<U16> construct_bottom_bishop_moves_with_board(const U8 p0, co
     std::unordered_set<U16> bishop_moves;
 
     // top right - move back
-    if (p0 < 6 || p0 == 13) {
+    if (p0 < 6 || p0 >= 12) {
         if (!(board[p0+pos(0,1)+pos(1,0)] & color)) bishop_moves.insert(move(p0, p0+pos(0,1)+pos(1,0)));
     }
     // bottom right - move back
@@ -141,6 +141,7 @@ std::unordered_set<U16> construct_bottom_bishop_moves_with_board(const U8 p0, co
     }
 
     std::vector<U8> p1s;
+    std::vector<U8> p1s_2;
 
     // top left - forward / reflections
     if (p0 == 1) {
@@ -161,15 +162,21 @@ std::unordered_set<U16> construct_bottom_bishop_moves_with_board(const U8 p0, co
         p1s.push_back(pos(3,6));
     }
     else if (p0 == 4 || p0 == 5) {
-        p1s.push_back(p0-pos(2,0));
         p1s.push_back(p0+pos(0,1)-pos(1,0));
+        p1s.push_back(p0-pos(2,0));
     }
     else if (p0 == 6) {
         p1s.push_back(pos(5,1));
     }
     else if (p0 == 10) {
-        p1s.push_back(pos(1,0));
-        p1s.push_back(pos(0,1));
+        p1s_2.push_back(pos(1,0));
+        p1s_2.push_back(pos(0,1));
+
+        p1s.push_back(pos(1,2));
+        p1s.push_back(pos(0,3));
+        p1s.push_back(pos(1,4));
+        p1s.push_back(pos(2,5));
+        p1s.push_back(pos(3,6));
     }
     else if (p0 == 11) {
         p1s.push_back(pos(2,0));
@@ -187,15 +194,18 @@ std::unordered_set<U16> construct_bottom_bishop_moves_with_board(const U8 p0, co
         p1s.push_back(pos(3,1));
     }
 
-    // back 
-    if (p0 < 6 || p0 >= 12) {
-        p1s.push_back(pos(getx(p0)+1,gety(p0)+1));
-    }
-    if (p0 > 9) {
-        p1s.push_back(pos(getx(p0)+1,gety(p0)-1));
+    for (auto p1 : p1s) {
+        if (board[p1]) {
+            if (board[p1] & color) break;           // our piece
+            else bishop_moves.insert(move(p0, p1)); // their piece - capture
+            break;
+        }
+        else {
+            bishop_moves.insert(move(p0, p1));
+        }
     }
 
-    for (auto p1 : p1s) {
+    for (auto p1 : p1s_2) {
         if (board[p1]) {
             if (board[p1] & color) break;           // our piece
             else bishop_moves.insert(move(p0, p1)); // their piece - capture
@@ -591,10 +601,10 @@ void Board::_undo_last_move(U16 move) {
     }
 
     if (promo == PAWN_ROOK) {
-        piecetype = (piecetype & (WHITE | BLACK)) | ROOK;
+        piecetype = ((piecetype & (WHITE | BLACK)) ^ ROOK) | PAWN;
     }
     else if (promo == PAWN_BISHOP) {
-        piecetype = (piecetype & (WHITE | BLACK)) | BISHOP;
+        piecetype = ((piecetype & (WHITE | BLACK)) ^ BISHOP) | PAWN;
     }
 
     this->data.board_0[p0]           = piecetype;

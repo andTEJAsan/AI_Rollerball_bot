@@ -1,0 +1,7 @@
+pieces_under_threat 0
+moves_for_king 3
+moves_for_bishop 2
+moves_for_rook 2
+moves_for_pawn 0.3
+queening_advantage 0.5
+points 5

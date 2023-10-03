@@ -1,0 +1,8 @@
+promotion_advantage 3.39219
+moves_for_king 0.000745706
+moves_for_bishop 0.0494585
+moves_for_pawn 1.03689
+in_check 2.4127
+moves_for_rook 1.88344
+points 13.9064
+under_attack 5.09401

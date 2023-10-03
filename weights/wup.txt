@@ -1,0 +1,12 @@
+safe_advantage 0.0096051
+bishop_positional_advantage 0.00207421
+rook_positional_advantage 0.0124724
+promotion_advantage 3.43617
+moves_for_king 0.000864633
+moves_for_bishop 0.000201241
+moves_for_rook 2.07813
+moves_for_pawn 1.06729
+in_check 2.4167
+points 13.9209
+under_attack 5.0733
+weighted_points_diff 0.0154637

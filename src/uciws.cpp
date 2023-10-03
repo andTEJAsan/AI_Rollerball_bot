@@ -127,8 +127,8 @@ void UCIWSServer::on_go(std::vector<std::string>& toks) {
 void UCIWSServer::on_stop() {
     std::cout << "In method on_stop\n";
     e.search = false;
-    U16 move = e.best_move;
     this->game_thread.join();
+    U16 move = e.best_move;
 
     // move checking
     auto legal_moves = b.get_legal_moves();

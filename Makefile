@@ -10,6 +10,14 @@ LIBRARYPATH=$(shell python -c "import sysconfig; import os;print(os.path.split(o
 PYTHON_VERSION=$(shell python -c "import sys; print('python' + '.'.join(sys.version.split('|')[0].strip().split('.')[:2]))")
 # export LIBRARY_PATH=$(LIBRARYPATH):$(LD_LIBRARY_PATH)
 
+testing:
+	g++ -o ./bin/testing ./src/testing.cpp ./src/board.cpp
+
+train:
+	$(CC) $(CFLAGS) $(INCLUDES) -o ./bin/training ./src/train.cpp ./src/board.cpp
+
+runtrain:
+	script -c ./bin/training -f training_logs_2.txt
 
 rollerball:
 	mkdir -p bin

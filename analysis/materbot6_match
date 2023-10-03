@@ -1,0 +1,961 @@
+dhruv@Dhruvs-Acer-Nitro:~/AI/A2$ ./bin/materbot6_0.005 -p 8181
+got weights as follows: 
+promotion_advantage 1.44794
+moves_for_king 1.76509
+moves_for_bishop 1.19689
+moves_for_pawn 0.448646
+in_check 1.0701
+moves_for_rook 2.75872
+in_checkmate 2
+points 10.0447
+under_attack 2.60457
+[2023-09-21 18:55:23] [connect] WebSocket Connection [::1]:36748 v13 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.36" / 101
+Connection opened.
+There are now 1 open connections.
+In method on_uci
+[2023-09-21 18:55:23] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 5 payload bytes
+[2023-09-21 18:55:23] [frame_header] Header Bytes: 
+[0] (2) 81 05 
+
+[2023-09-21 18:55:23] [frame_payload] Payload Bytes: 
+[0] (5) [1] uciok
+
+In method on_isready
+[2023-09-21 18:55:26] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 7 payload bytes
+[2023-09-21 18:55:26] [frame_header] Header Bytes: 
+[0] (2) 81 07 
+
+[2023-09-21 18:55:26] [frame_payload] Payload Bytes: 
+[0] (7) [1] readyok
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+reached here at depth 4
+
+In method on_stop
+went to depth 4 at time 0.482717cost: -2.04339
+path is as follows: 
+d7e2 d1c6 e6f6 c2b2 
+best move: c2b2 with cost -2.04339
+..rbp..
+..rkp..
+..   ..
+..   ..
+..   ..
+..PKR..
+..PBR..
+
+score for white: 13and black 13
+[2023-09-21 18:55:28] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:55:28] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:55:28] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove c2b2
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.173203cost: 17.598
+path is as follows: 
+e2f2 c7c6 d1c6 
+best move: d1c6 with cost 17.598
+..rbp..
+..rk.p.
+..   ..
+..   ..
+..   ..
+.P.KR..
+..PBR..
+
+score for white: 13and black 13
+[2023-09-21 18:55:33] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:55:33] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:55:33] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove d1c6
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+reached here at depth 4
+
+In method on_stop
+went to depth 4 at time 1.65818cost: 9.59366
+path is as follows: 
+c7b7 c1b1 d7g4 e2f2 
+best move: e2f2 with cost 9.59366
+..rbp..
+..k..p.
+..   ..
+..   ..
+..   ..
+.P.KR..
+..P.R..
+
+score for white: 10and black 9
+[2023-09-21 18:55:37] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:55:37] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:55:37] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove e2f2
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.200186cost: 36.5558
+path is as follows: 
+c1b2 g4b3 b2b3 
+best move: b2b3 with cost 36.5558
+..r.p..
+..k..p.
+..   ..
+..   .b
+..   ..
+.P.K.R.
+..P.R..
+
+score for white: 10and black 9
+[2023-09-21 18:55:41] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:55:41] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:55:41] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove b2b3
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.257445cost: 33.2209
+path is as follows: 
+c1b2 e7f6 f2g2 
+best move: f2g2 with cost 33.2209
+..r.p..
+..k....
+..   .p
+..   .b
+.P   ..
+...K.R.
+..P.R..
+
+score for white: 10and black 9
+[2023-09-21 18:55:45] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:55:45] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:55:45] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove f2g2
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.335165cost: 37.7216
+path is as follows: 
+c1b2 f3b3 g2g3 
+best move: g2g3 with cost 37.7216
+..r.p..
+..k....
+..   .p
+..   ..
+.P   b.
+...K..R
+..P.R..
+
+score for white: 10and black 9
+[2023-09-21 18:55:49] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:55:49] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:55:49] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove g2g3
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.316622cost: 24.7224
+path is as follows: 
+c1b2 g4f3 g3f3 
+best move: g3f3 with cost 24.7224
+..r.p..
+..k....
+..   ..
+..   .p
+.P   bR
+...K...
+..P.R..
+
+score for white: 10and black 9
+[2023-09-21 18:55:53] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:55:53] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:55:53] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove g3f3
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+reached here at depth 4
+
+In method on_stop
+went to depth 4 at time 1.30177cost: -2.47957
+path is as follows: 
+e7f6 e1f1 c6b6 c1b2 
+best move: c1b2 with cost -2.47957
+..r.p..
+..k....
+..   ..
+..   ..
+.P   p.
+...K...
+..P.R..
+
+score for white: 6and black 6
+[2023-09-21 18:55:57] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:55:57] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:55:57] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove c1b2
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.318408cost: 34.6379
+path is as follows: 
+b3b4 c7c6 e1a1 
+best move: e1a1 with cost 34.6379
+..r.p..
+.k.....
+..   ..
+..   ..
+.P   p.
+.P.K...
+....R..
+
+score for white: 6and black 6
+[2023-09-21 18:56:01] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:01] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:01] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove e1a1
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+reached here at depth 4
+
+In method on_stop
+went to depth 4 at time 1.85673cost: -4.47365
+path is as follows: 
+b6c7 a1c7 e7f6 b3b4 
+best move: b3b4 with cost -4.47365
+..r.p..
+.k.....
+..   ..
+..   ..
+.P   ..
+.P.K.p.
+R......
+
+score for white: 6and black 6
+[2023-09-21 18:56:05] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:05] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:05] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove b3b4
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.269873cost: 30.7168
+path is as follows: 
+e7g1 c6f6 a1e7 
+best move: a1e7 with cost 30.7168
+....p..
+.kr....
+..   ..
+.P   ..
+..   ..
+.P.K.p.
+R......
+
+score for white: 6and black 6
+[2023-09-21 18:56:09] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:09] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:09] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove a1e7
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.393163cost: 16.701
+path is as follows: 
+e7f7 b6a5 b4a5 
+best move: b4a5 with cost 16.701
+..r.R..
+.k.....
+..   ..
+.P   ..
+..   ..
+.P.K.p.
+.......
+
+score for white: 6and black 5
+[2023-09-21 18:56:13] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:13] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:13] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove b4a5
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.275229cost: -10.0865
+path is as follows: 
+d2e1 f2e1 e7e6 
+best move: e7e6 with cost -10.0865
+..r.R..
+.......
+k.   ..
+..   ..
+..   ..
+.P.K.p.
+.......
+
+score for white: 5and black 5
+[2023-09-21 18:56:17] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:17] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:17] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove e7e6
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+reached here at depth 4
+
+In method on_stop
+went to depth 4 at time 0.853653cost: -76.0604
+path is as follows: 
+d1c1r e6f6 e1d1 d2e2 
+best move: d2e2 with cost -76.0604
+..r....
+....R..
+k.   ..
+..   ..
+..   ..
+.P.K...
+....p..
+
+score for white: 5and black 5
+[2023-09-21 18:56:21] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:21] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:21] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove d2e2
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.25654cost: -41.7505
+path is as follows: 
+d6d7 d1c1r e6d6 
+best move: e6d6 with cost -41.7505
+..r....
+....R..
+k.   ..
+..   ..
+..   ..
+.P..K..
+...p...
+
+score for white: 5and black 5
+[2023-09-21 18:56:25] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:25] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:25] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove e6d6
+
+In method on_position
+In method on_go
+In method on_stop
+[2023-09-21 18:56:29] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:29] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:29] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove e2f3
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.161834cost: 2.97158
+path is as follows: 
+g6f1 d1c1r d6g6 
+best move: d6g6 with cost 2.97158
+.......
+...R...
+k.   ..
+..   ..
+..   K.
+.P.....
+...p.r.
+
+score for white: 5and black 5
+[2023-09-21 18:56:33] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:33] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:33] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove d6g6
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.24128cost: 25.269
+path is as follows: 
+f1a2 d1c2r g6f1 
+best move: g6f1 with cost 25.269
+.......
+.k....R
+..   ..
+..   ..
+..   K.
+.P.....
+...p.r.
+
+score for white: 5and black 5
+[2023-09-21 18:56:37] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:37] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:37] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove g6f1
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+reached here at depth 4
+
+In method on_stop
+went to depth 4 at time 1.51612cost: 2.10239
+path is as follows: 
+d2b2 b1a1 c2d2 f1b1 
+best move: f1b1 with cost 2.10239
+.......
+.k.....
+..   ..
+..   ..
+..   K.
+.Pr....
+.....R.
+
+score for white: 5and black 4
+[2023-09-21 18:56:41] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:41] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:41] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove f1b1
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+reached here at depth 4
+
+In method on_stop
+went to depth 4 at time 1.08277cost: -9.17932
+path is as follows: 
+d2d1 b1b3 b6c6 b2a3 
+best move: b2a3 with cost -9.17932
+.......
+.k.....
+..   ..
+..   ..
+..   K.
+.P.r...
+.R.....
+
+score for white: 5and black 4
+[2023-09-21 18:56:45] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:45] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:45] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove b2a3
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+reached here at depth 4
+
+In method on_stop
+went to depth 4 at time 1.06823cost: 1.1966
+path is as follows: 
+d2b2 b4a4 c7c6 b1b4 
+best move: b1b4 with cost 1.1966
+..k....
+.......
+..   ..
+..   ..
+P.   K.
+...r...
+.R.....
+
+score for white: 5and black 4
+[2023-09-21 18:56:49] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:49] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:49] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove b1b4
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+reached here at depth 4
+
+In method on_stop
+went to depth 4 at time 0.670445cost: 2.9185
+path is as follows: 
+b2b6 a4a6 d2b2 b4a4 
+best move: b4a4 with cost 2.9185
+.......
+..k....
+..   ..
+.R   ..
+P.   K.
+...r...
+.......
+
+score for white: 5and black 4
+[2023-09-21 18:56:53] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:53] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:53] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove b4a4
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.270826cost: 8.346
+path is as follows: 
+f3f2 c6b5 a4a6 
+best move: a4a6 with cost 8.346
+.......
+..k....
+..   ..
+R.   ..
+P.   K.
+.......
+...r...
+
+score for white: 5and black 4
+[2023-09-21 18:56:57] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:56:57] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:56:57] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove a4a6
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.324517cost: -0.851464
+path is as follows: 
+e2f2 d1a3 f3e2 
+best move: f3e2 with cost -0.851464
+.......
+R......
+.k   ..
+..   ..
+P.   K.
+.......
+...r...
+
+score for white: 5and black 4
+[2023-09-21 18:57:01] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:57:01] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:57:01] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove f3e2
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.274722cost: -18.4165
+path is as follows: 
+g6b1 a3a6 a6g6 
+best move: a6g6 with cost -18.4165
+.......
+R......
+.k   ..
+..   ..
+r.   ..
+....K..
+.......
+
+score for white: 4and black 4
+[2023-09-21 18:57:05] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:57:05] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:57:05] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove a6g6
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.256972cost: -10.5041
+path is as follows: 
+b1a2 b5c6 g6b1 
+best move: g6b1 with cost -10.5041
+.....r.
+......R
+.k   ..
+..   ..
+..   ..
+....K..
+.......
+
+score for white: 4and black 4
+[2023-09-21 18:57:09] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:57:09] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:57:09] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove g6b1
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.253755cost: 79.5485
+path is as follows: 
+a6f7 c6b5 b1a6 
+best move: b1a6 with cost 79.5485
+.....r.
+..k....
+..   ..
+..   ..
+..   ..
+....K..
+.R.....
+
+score for white: 4and black 4
+[2023-09-21 18:57:13] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:57:13] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:57:13] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove b1a6
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+In method on_stop
+went to depth 3 at time 0.20664cost: 78.233
+path is as follows: 
+f7g1 b5b6 a6f7 
+best move: a6f7 with cost 78.233
+.....r.
+R......
+.k   ..
+..   ..
+..   ..
+....K..
+.......
+
+score for white: 4and black 4
+[2023-09-21 18:57:17] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:57:17] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:57:17] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove a6f7
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+reached here at depth 4
+
+In method on_stop
+went to depth 4 at time 0.347649cost: 79.4641
+path is as follows: 
+b5c6 g4b1 a4b5 f7g4 
+best move: f7g4 with cost 79.4641
+.....R.
+.......
+..   ..
+k.   ..
+..   ..
+....K..
+.......
+
+score for white: 4and black 0
+[2023-09-21 18:57:21] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:57:21] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:57:21] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove f7g4
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+reached here at depth 4
+
+reached here at depth 5
+
+WE FOUND A FORCED CHECKMATE at depth 5
+went to depth 5 at time 0.214619cost: 1e+08
+path is as follows: 
+c1b1 b3b4 b3b4 g4c1 
+best move: g4c1 with cost 1e+08
+.......
+.......
+..   ..
+..   .R
+.k   ..
+....K..
+.......
+
+score for white: 4and black 0
+In method on_stop
+[2023-09-21 18:57:25] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:57:25] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:57:25] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove g4c1
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+reached here at depth 2
+
+reached here at depth 3
+
+WE FOUND A FORCED CHECKMATE at depth 3
+went to depth 3 at time 0.00391719cost: 1e+08
+path is as follows: 
+c1b1 b2b3 b2b3 e2d1 
+best move: e2d1 with cost 1e+08
+.......
+.......
+..   ..
+..   ..
+..   ..
+.k..K..
+..R....
+
+score for white: 4and black 0
+In method on_stop
+[2023-09-21 18:57:29] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:57:29] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:57:29] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove e2d1
+
+In method on_position
+In method on_go
+reached here at depth 1
+
+WE FOUND A FORCED CHECKMATE at depth 1
+went to depth 1 at time 0cost: 1e+08
+path is as follows: 
+c1b1 
+best move: c1b1 with cost 1e+08
+.......
+.......
+..   ..
+..   ..
+.k   ..
+.......
+..RK...
+
+score for white: 4and black 0
+In method on_stop
+[2023-09-21 18:57:33] [frame_header] Dispatching write containing 1 message(s) containing 2 header bytes and 13 payload bytes
+[2023-09-21 18:57:33] [frame_header] Header Bytes: 
+[0] (2) 81 0D 
+
+[2023-09-21 18:57:33] [frame_payload] Payload Bytes: 
+[0] (13) [1] bestmove c1b1
